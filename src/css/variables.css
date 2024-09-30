@@ -3,11 +3,15 @@
   --navbar-primary-color: #000;
   --navbar-text-color: #fff;
   --navbar-hover-color: #5e5e5e;
+  --foreground-color: #000;
+  --background-color: #c9c9c9;
+  --card-color: #fff;
+
   /* Spacing */
   --spacing-small: 0.5rem;
   --spacing-meduim: 1rem;
   --spacing-large: 2rem;
-  --spacing-x-large: 3rem;
+  --spacing-x-large: 4rem;
   /* Font size */
   --font-size-base: 1rem;
   --font-size-meduim: 1.2rem;

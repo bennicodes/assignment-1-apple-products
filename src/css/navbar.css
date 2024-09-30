@@ -1,21 +1,21 @@
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: Open Sans;
+  src: url(../assets/fonts/OpenSans-VariableFont_wdth\wght.ttf);
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-color: ;
+  background-color: var();
 }
 
 .navbar {
   width: 100%;
   display: flex;
-  padding: ;
+  padding: var(--spacing-large);
   justify-content: space-around;
   background-color: #000;
-  font-family: ;
+  font-family: Open sans, sans-serif;
 }
 
 /* Styles for logo --------------------*/
@@ -58,7 +58,7 @@ body {
 
 /* styles for hamburger menu */
 .navbar__menu {
-  /* display: none; */
+  display: none;
 }
 .navbar__toggle {
   background-color: transparent;
