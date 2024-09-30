@@ -1,8 +1,8 @@
 :root {
   /* Colors */
-  --navbar-primary-color: ;
-  --navbar-text-color: ;
-  --navbar-hover-color: ;
+  --navbar-primary-color: #000;
+  --navbar-text-color: #fff;
+  --navbar-hover-color: #5e5e5e;
   /* Spacing */
   --spacing-small: 0.5rem;
   --spacing-meduim: 1rem;
