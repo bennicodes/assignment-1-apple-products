@@ -3,3 +3,12 @@ body {
   height: 100vh;
   background-color: var(--background-color);
 }
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.header-video {
+  width: 100%;
+  height: auto;
+}
