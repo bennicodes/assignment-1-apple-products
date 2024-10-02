@@ -94,3 +94,12 @@ header {
 }
 
 /* Footer */
+.footer-container {
+  background-color: var(--footer-background);
+  color: var(--footer-foreground);
+  min-height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+}

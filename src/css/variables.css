@@ -5,8 +5,9 @@
   --navbar-hover-color: #5e5e5e;
   --foreground-color: #000;
   --background-color: #f0f0f0;
-  --footer-color: #000;
   --card-color: #fff;
+  --footer-background: #000;
+  --footer-foreground: #fff;
 
   /* Spacing */
   --spacing-small: 0.5rem;
