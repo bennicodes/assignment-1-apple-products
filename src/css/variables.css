@@ -15,4 +15,7 @@
   /* Font size */
   --font-size-base: 1rem;
   --font-size-meduim: 1.2rem;
+
+  /* Border */
+  --product-card-border-radius: 8px;
 }
