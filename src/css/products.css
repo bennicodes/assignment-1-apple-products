@@ -28,16 +28,22 @@ main {
 }
 
 .section__heading {
-  padding: var(--spacing-meduim) 0 var(--spacing-meduim) var(--spacing-x-large);
+  padding: 1rem 0 1rem 2rem;
 }
 
-.iphone__section {
+.product__section {
   width: 100%;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: var(--spacing-meduim);
+  margin-bottom: var(--spacing-x-large);
+}
+
+.product__card--heading{
+  padding: 0.5rem 0 1rem 0;
+  font-weight: 600;
 }
 
 .product__card {
@@ -75,13 +81,20 @@ main {
   transition: 0.3s ease;
 }
 
-.mac__section {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: var(--spacing-meduim);
+.product__card:hover{
+  box-shadow: var(--card-hover-shadow);
+  .product__card--image{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
 }
-/* TODO  */
-Add hover effect to cards
+
+@media screen and (max-width: 1100){
+  main{
+    padding: var(--spacing-small);
+  }
+  .product__section{
+    flex-direction: row;
+    padding: var(--spacing-meduim) 0;
+  }
+}

@@ -46,6 +46,15 @@ header {
   font-size: var(--font-size-meduim);
 }
 
+.product__container--header {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-meduim);
+  font-family: Open Sans, sans-serif;
+  font-size: var(--font-size-meduim);
+  font-weight: 600;
+}
+
 .product__container {
   background-color: #fff;
   width: var(--card-width);
@@ -68,14 +77,6 @@ header {
   grid-column: 12/17;
 }
 
-.product__container--header {
-  display: flex;
-  justify-content: center;
-  padding: var(--spacing-meduim);
-  font-family: Open Sans, sans-serif;
-  font-size: var(--font-size-meduim);
-}
-
 .product__buy-link {
   color: #2f8af1;
   width: var(--spacing-x-large);
@@ -93,10 +94,9 @@ header {
 }
 
 .product__container:hover {
-  box-shadow: 0px 0px 2px 2px #bbbbbb;
-}
-
-.product__container--link:hover {
-  transform: scale(1.1);
-  transition: 0.5s ease;
+  box-shadow: var(--card-hover-shadow);
+  .product__container--image {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
 }

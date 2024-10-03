@@ -24,6 +24,7 @@
   /* Product card */
   --card-heigth: 400px;
   --card-width: 300px;
+  --card-hover-shadow: 0px 0px 2px 2px #bbbbbb;
 
   /* Border */
   --product-card-border-radius: 16px;
