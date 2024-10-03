@@ -36,7 +36,7 @@ main {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: var(--spacing-meduim);
 }
 
@@ -46,8 +46,42 @@ main {
   height: var(--card-heigth);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: var(--spacing-meduim);
   border-radius: var(--product-card-border-radius);
   font-size: var(--font-size-meduim);
 }
+
+.card__paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-large);
+  font-size: 0.8rem;
+}
+
+.product__buy--link {
+  color: #2f8af1;
+  width: var(--spacing-x-large);
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-small);
+  border: 2px solid #2f8af1;
+  border-radius: 1.5rem;
+}
+.product__buy--link:hover {
+  background-color: #2f8af1;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.mac__section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--spacing-meduim);
+}
+/* TODO  */
+Add hover effect to cards
