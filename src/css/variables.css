@@ -8,6 +8,7 @@
   --card-color: #fff;
   --footer-background: #000;
   --footer-foreground: #fff;
+  --button-color: #2f8af1;
 
   /* Spacing */
   --spacing-small: 0.5rem;
@@ -20,6 +21,10 @@
   --font-size-large: 1.5rem;
   --font-size-x-large: 2rem;
 
+  /* Product card */
+  --card-heigth: 400px;
+  --card-width: 300px;
+
   /* Border */
-  --product-card-border-radius: 8px;
+  --product-card-border-radius: 16px;
 }

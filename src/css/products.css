@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Open Sans;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: Open Sans, sans-serif;
+}
+
+main {
+  padding: var(--spacing-x-large);
+}
+
+.heading-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  margin-left: var(--spacing-small);
+  padding-bottom: var(--spacing-small);
+}
+
+.main-heading {
+  font-weight: 600;
+}
+
+.section__heading {
+  padding: var(--spacing-meduim) 0 var(--spacing-meduim) var(--spacing-x-large);
+}
+
+.iphone__section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--spacing-meduim);
+}
+
+.product__card {
+  background-color: #fff;
+  width: var(--card-width);
+  height: var(--card-heigth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-meduim);
+  border-radius: var(--product-card-border-radius);
+  font-size: var(--font-size-meduim);
+}
