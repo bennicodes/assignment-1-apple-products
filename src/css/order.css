@@ -1,15 +1,16 @@
-body{
-    width: 100%;
-    min-height: 100vh;
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
 }
 
-main{
-    padding: var(--spacing-x-large);
+main {
+  padding: var(--spacing-x-large);
 }
 
-.costumer__info--section{
-    background-color: var(--background-color);
-    display: flex;
-    border: 1px solid #000;
-    border-radius: var(--product-card-border-radius)
+.order-section {
+  background-color: var(--card-color);
+  display: flex;
+  border: 1px solid #000;
+  border-radius: var(--product-card-border-radius);
 }
