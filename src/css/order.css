@@ -1,16 +1,45 @@
+@font-face {
+  font-family: Open Sans;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--background-color);
+  font-family: Open Sans, sans-serif;
 }
 
 main {
+  display: flex;
+  justify-content: center;
   padding: var(--spacing-x-large);
 }
 
-.order-section {
+.order__section--heading{
+  
+}
+
+.order__section {
+  width: 64rem;
+  height: auto;
   background-color: var(--card-color);
   display: flex;
-  border: 1px solid #000;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   border-radius: var(--product-card-border-radius);
+  padding: var(--spacing-large);
+  border: 1px solid #000;
+  font-size: var(--font-size-base);
 }
+
+.order__form--heading{
+  font-size: var(--font-size-meduim);
+  font-weight: 600;
+}
+
+.order__form---billing-info{
+
+}
+
+

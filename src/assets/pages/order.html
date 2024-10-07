@@ -115,10 +115,11 @@
       </div>
     </nav>
     <main>
-      <section class="order-section">
-        <form action="">
-          <div class="form-group">
-            <label for="product-dropdown" class="product__form--label">Product:</label>
+      <section class="order__section">
+        <form class="order__form">
+          <h2 class="order__section--heading">Order Info</h2>
+          <div class="order__form--group">
+            <label for="order__product--dropdown" class="product__form--label">Choose your product:</label>
             <select name="products" id="pro" class="product__form--dropdown">
               <option value="iphone-16" class="product__form--options">iPhone 16</option>
               <option value="iphone-16-plus" class="product__form--options">iPhone 16 Plus</option>
@@ -130,8 +131,11 @@
               <option value="ipad-pro" class="product__form--options">iPad Pro</option>
               <option value="ipad-air" class="product__form--options">iPad Air</option>
               <option value="ipad" class="product__form--options">iPad</option>
-             
             </select>
+          </div>
+          <div class="order__form--billing-info">
+            <h3 class="order__form--heading">Billing Info</h3>
+            <label for="" class="product__form--label"></label>
           </div>
         </form>
       </section>
