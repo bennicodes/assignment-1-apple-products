@@ -116,27 +116,39 @@
     </nav>
     <main>
       <section class="order__section">
+        <h2 class="order__section--heading">Order Information</h2>
         <form class="order__form">
-          <h2 class="order__section--heading">Order Info</h2>
+          <section class="billing-info">
+            <div class="order__form--billing-info">
+              <h3 class="order__form--heading">Billing Info</h3>
+              <label for="full-name" class="product__form--label">Full Name</label>
+              <input type="text" class="order__form--input" name="full-name"
+              required
+              minlength="1"
+              maxlength="50"
+              placeholder="e.g.John Smith"
+              >
+            </div>
+        </section>
           <div class="order__form--group">
-            <label for="order__product--dropdown" class="product__form--label">Choose your product:</label>
-            <select name="products" id="pro" class="product__form--dropdown">
-              <option value="iphone-16" class="product__form--options">iPhone 16</option>
-              <option value="iphone-16-plus" class="product__form--options">iPhone 16 Plus</option>
-              <option value="iphone-16-pro" class="product__form--options">iPhone 16 Pro</option>
-              <option value="iphone-16-pro-max" class="product__form--options">iPhone 16 Pro Max</option>
-              <option value="macbook-pro" class="product__form--options">Macbook Pro</option>
-              <option value="macbook-air" class="product__form--options">Macbook Air</option>
-              <option value="macbook-imac" class="product__form--options">Macbook iMac</option>
-              <option value="ipad-pro" class="product__form--options">iPad Pro</option>
-              <option value="ipad-air" class="product__form--options">iPad Air</option>
-              <option value="ipad" class="product__form--options">iPad</option>
+            <label for="order__product--dropdown" class="order__form--label">Choose your product:</label>
+            <select name="products" id="pro" class="product__select--dropdown"
+            required>
+              option.product__form--opitons
+              <option value="" class="product__select--option">Choose product</option>
+              <option value="iphone-16" class="product__select--option">iPhone 16</option>
+              <option value="iphone-16-plus" class="product__select--option">iPhone 16 Plus</option>
+              <option value="iphone-16-pro" class="product__select--option">iPhone 16 Pro</option>
+              <option value="iphone-16-pro-max" class="product__select--option">iPhone 16 Pro Max</option>
+              <option value="macbook-pro" class="product__select--option">Macbook Pro</option>
+              <option value="macbook-air" class="product__select--option">Macbook Air</option>
+              <option value="macbook-imac" class="product__select--option">Macbook iMac</option>
+              <option value="ipad-pro" class="product__select--option">iPad Pro</option>
+              <option value="ipad-air" class="product__select--option">iPad Air</option>
+              <option value="ipad" class="product__select--option">iPad</option>
             </select>
           </div>
-          <div class="order__form--billing-info">
-            <h3 class="order__form--heading">Billing Info</h3>
-            <label for="" class="product__form--label"></label>
-          </div>
+          
         </form>
       </section>
       </div>

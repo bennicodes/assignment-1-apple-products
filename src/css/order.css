@@ -16,7 +16,7 @@ main {
 }
 
 .order__section--heading{
-  
+  text-align: center;
 }
 
 .order__section {
@@ -25,17 +25,30 @@ main {
   background-color: var(--card-color);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   border-radius: var(--product-card-border-radius);
-  padding: var(--spacing-large);
+  padding: var(--spacing-meduim);
   border: 1px solid #000;
   font-size: var(--font-size-base);
 }
 
+.order__form{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-meduim);
+}
+
 .order__form--heading{
+  padding-bottom: var(--spacing-meduim);
   font-size: var(--font-size-meduim);
   font-weight: 600;
+}
+
+.order__form--label{
+  display: block;
+}
+.order__form--input{
+  padding: 2px;
 }
 
 .order__form---billing-info{
