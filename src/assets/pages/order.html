@@ -118,23 +118,13 @@
       <section class="order__section">
         <h2 class="order__section--heading">Order Information</h2>
         <form class="order__form">
-          <section class="billing-info">
-            <div class="order__form--billing-info">
-              <h3 class="order__form--heading">Billing Info</h3>
-              <label for="full-name" class="product__form--label">Full Name</label>
-              <input type="text" class="order__form--input" name="full-name"
-              required
-              minlength="1"
-              maxlength="50"
-              placeholder="e.g.John Smith"
-              >
-            </div>
-        </section>
-          <div class="order__form--group">
-            <label for="order__product--dropdown" class="order__form--label">Choose your product:</label>
-            <select name="products" id="pro" class="product__select--dropdown"
+          <div class="product__selection--group">
+            <label for="product__selection--dropdown" class="form__label">Choose your product:</label>
+            <select 
+            name="products" 
+            id="products" 
+            class="product__dropdown--select"
             required>
-              option.product__form--opitons
               <option value="" class="product__select--option">Choose product</option>
               <option value="iphone-16" class="product__select--option">iPhone 16</option>
               <option value="iphone-16-plus" class="product__select--option">iPhone 16 Plus</option>
@@ -148,7 +138,122 @@
               <option value="ipad" class="product__select--option">iPad</option>
             </select>
           </div>
-          
+          <section class="order__form--container">
+            <section class="costumer__info--container">
+              <div class="costumer__info--group">
+                <h3 class="form__section--heading">Billing Address</h3>
+                <label for="full-name" class="form__label">Full Name:</label>
+                <input type="text" class="form__input" name="full-name"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g.John Smith"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="email" class="form__label">Email:</label>
+                <input type="email" class="form__input" name="email"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g.johnsmith@gmail.com"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="address" class="form__label">Address:</label>
+                <input type="text" class="form__input" name="address"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g. Bumpy Road 123"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="city" class="form__label">City:</label>
+                <input type="text" class="form__input" name="city"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g. Oslo"
+                >
+              <div class="costumer__info--group">
+                <label for="city" class="form__label">State:</label>
+                <input type="text" class="form__input" name="state"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g. Norway"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="zip-code" class="form__label">Zip Code:</label>
+                <input type="number" class="form__input" name="zip-code"
+                required
+                minlength="1"
+                maxlength="10"
+                placeholder=" e.g. 2070"
+                >
+              </div>
+            </section>
+            <section class="costumer__info--container">
+              <div class="costumer__info--group">
+                <h3 class="form__section--heading">Payment </h3>
+                <p class="form__image--text">Accepted Payment:</p> 
+                <input type="text" class="form__input" name="full-name"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g.John Smith"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="name-on-card" class="form__label">Name On Card:</label>
+                <input type="text" class="form__input" name="name-on-card"
+                required
+                minlength="1"
+                maxlength="50"
+                placeholder=" e.g. John Smith"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="credit-card-number" class="form__label">Credit Card Number:</label>
+                <input type="number" class="form__input" name="credit-card-number"
+                required
+                minlength="16"
+                maxlength="16"
+                placeholder="1234 5678 1234 5678"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="exp-date" class="form__label">Exp. Date:</label>
+                <input type="text" class="form__input" name="exp-date"
+                required
+                min=""
+                placeholder=" mm/yyyy"
+                >
+              <div class="costumer__info--group">
+                <label for="cvv" class="form__label">CVV:</label>
+                <input type="number" class="form__input" name="state"
+                required
+                minlength="3"
+                maxlength="4"
+                placeholder=" e.g. 123"
+                >
+              </div>
+              <div class="costumer__info--group">
+                <label for="zip-code" class="form__label">Exp. Year:</label>
+                <input type="number" class="form__input" name="zip-code"
+                required
+                minlength="1"
+                maxlength="10"
+                placeholder=" e.g. 2070"
+                >
+              </div>
+            </section>
+          </section>
+          <div class="button-container">
+          <button class="submit__button">Submit</button>
+        </div>
         </form>
       </section>
       </div>

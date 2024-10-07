@@ -2,6 +2,7 @@
   font-family: Open Sans;
   src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -15,44 +16,88 @@ main {
   padding: var(--spacing-x-large);
 }
 
-.order__section--heading{
-  text-align: center;
-}
-
 .order__section {
-  width: 64rem;
-  height: auto;
+  width: 75%;
   background-color: var(--card-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border-radius: var(--product-card-border-radius);
   padding: var(--spacing-meduim);
   border: 1px solid #000;
   font-size: var(--font-size-base);
 }
 
-.order__form{
-  display: flex;
-  justify-content: space-between;
+.order__section--heading {
+  text-align: center;
+}
+
+.order__form {
   padding: var(--spacing-meduim);
 }
 
-.order__form--heading{
-  padding-bottom: var(--spacing-meduim);
+.product__selection--group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__dropdown--select {
+  padding: 1px;
+  border-radius: 4px;
+}
+
+/* Containers */
+.order__form--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.costumer__info--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__section--heading {
+  margin: var(--spacing-small) 0;
   font-size: var(--font-size-meduim);
   font-weight: 600;
 }
 
-.order__form--label{
+
+/* Inputs */
+.form__label {
   display: block;
-}
-.order__form--input{
-  padding: 2px;
+  padding: var(--spacing-small) 0;
 }
 
-.order__form---billing-info{
-
+.form__input {
+  padding: var(--spacing-small) 0 var(--spacing-small) 0.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: var(--font-size-base);
 }
 
+/* Button */
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-large);
+}
 
+.submit__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-small);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.submit__button:hover {
+  cursor: pointer;
+}
