@@ -42,6 +42,10 @@ main {
   border-bottom: 1px solid #000;
 }
 
+.product__section--ipad {
+  border: 0px;
+}
+
 .product__card--heading-iphone {
   padding-top: 0.5rem;
   font-weight: 600;
@@ -85,6 +89,8 @@ main {
   border: 2px solid #2f8af1;
   border-radius: 1.5rem;
 }
+
+/* Psuedo classes */
 .product__buy--link:hover {
   background-color: #2f8af1;
   color: white;
@@ -99,12 +105,27 @@ main {
   }
 }
 
-@media screen and (max-width: 1100) {
+/* Media queries */
+@media screen and (max-width: 1150px) {
   main {
     padding: var(--spacing-small);
   }
   .product__section {
     flex-direction: row;
+    flex-wrap: wrap;
     padding: var(--spacing-meduim) 0;
+    gap: var(--spacing-meduim);
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .product__section {
+    gap: var(--spacing-large);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product__section {
+    flex-direction: column;
   }
 }
