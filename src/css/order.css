@@ -132,13 +132,17 @@ main {
     padding: var(--spacing-x-large) var(--spacing-meduim);
   }
 }
+
 @media screen and (max-width: 1000px) {
   main {
     padding: var(--spacing-x-large) var(--spacing-small);
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
+  .order__form {
+    padding: var(--spacing-small);
+  }
   .order__form--container {
     flex-direction: column;
     align-items: center;
