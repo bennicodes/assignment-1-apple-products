@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/css/variables.css" />
     <link rel="stylesheet" href="/src/css/order.css" />
     <link rel="stylesheet" href="/src/css/navbar.css" />
+    <link rel="stylesheet" href="/src/css/footer.css" />
     <title>Order</title>
   </head>
   <body>
@@ -116,14 +117,14 @@
     </nav>
     <main>
       <section class="order__section">
-        <h2 class="order__section--heading">Order Information</h2>
         <form class="order__form">
+          <h2 class="order__section--heading">Order Information</h2>
           <div class="product__selection--group">
             <label for="product__selection--dropdown" class="form__label">Choose your product:</label>
             <select 
             name="products" 
             id="products" 
-            class="product__dropdown--select"
+            class="form__dropdown--select"
             required>
               <option value="" class="product__select--option">Choose product</option>
               <option value="iphone-16" class="product__select--option">iPhone 16</option>
@@ -140,8 +141,8 @@
           </div>
           <section class="order__form--container">
             <section class="costumer__info--container">
+              <h3 class="form__section--heading">Billing Address</h3>
               <div class="costumer__info--group">
-                <h3 class="form__section--heading">Billing Address</h3>
                 <label for="full-name" class="form__label">Full Name:</label>
                 <input type="text" class="form__input" name="full-name"
                 required
@@ -198,13 +199,19 @@
             <section class="costumer__info--container">
               <div class="costumer__info--group">
                 <h3 class="form__section--heading">Payment </h3>
-                <p class="form__image--text">Accepted Payment:</p> 
-                <input type="text" class="form__input" name="full-name"
-                required
-                minlength="1"
-                maxlength="50"
-                placeholder=" e.g.John Smith"
-                >
+                <p class="form__image--text">Accepted Payment:</p>
+                <img src="/src/assets/img/payment-method.png" alt="Visa logo, mastecard, America Express logo, Paypal"
+                class="form__image"> 
+              </div>
+              <div class="costumer__info--group">
+                <label for="payment-method" class="form__label">Payment Method</label>
+                <select name="" id="" class="form__dropdown--select">
+                  <option value="" class="payment__dropdown--option">Choose payment method</option>
+                  <option value="visa" class="payment__dropdown--option">Visa</option>
+                  <option value="mastercard" class="payment__dropdown--option">Mastercard</option>
+                  <option value="american-express" class="payment__dropdown--option">American Express</option>
+                  <option value="paypal" class="payment__dropdown--option">Paypal</option>
+                </select>
               </div>
               <div class="costumer__info--group">
                 <label for="name-on-card" class="form__label">Name On Card:</label>
@@ -228,7 +235,8 @@
                 <label for="exp-date" class="form__label">Exp. Date:</label>
                 <input type="text" class="form__input" name="exp-date"
                 required
-                min=""
+                minlength="7"
+                maxlength="7"
                 placeholder=" mm/yyyy"
                 >
               <div class="costumer__info--group">
@@ -237,16 +245,7 @@
                 required
                 minlength="3"
                 maxlength="4"
-                placeholder=" e.g. 123"
-                >
-              </div>
-              <div class="costumer__info--group">
-                <label for="zip-code" class="form__label">Exp. Year:</label>
-                <input type="number" class="form__input" name="zip-code"
-                required
-                minlength="1"
-                maxlength="10"
-                placeholder=" e.g. 2070"
+                placeholder="012"
                 >
               </div>
             </section>
@@ -258,5 +257,86 @@
       </section>
       </div>
     </main>
+    <footer>
+      <section class="footer__list--container">
+        <ul class="footer-list">
+          <h4>Entertainment</h4>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/apple-one/"
+              >Apple One</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/apple-tv-plus/"
+              >Apple TV+</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/apple-music/"
+              >Apple Music</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/app-store/"
+              >App Store</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <h4>About Apple</h4>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/newsroom/"
+              >Newsroom</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/leadership/"
+              >Apple Leadership</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a
+              class="footer-link"
+              href="https://investor.apple.com/investor-relations/default.aspx"
+              >Investors</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.apple.com/contact/"
+              >Contact Apple</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <h4>Account</h4>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://account.apple.com/"
+              >Manage Your Apple Account</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a
+              class="footer-link"
+              href="https://secure6.store.apple.com/shop/signIn/account?ssi=1AAABkk7MZuUgi48qIw5M1O1N_Iirhu5B2L-sTJ8evgNKXxCWsz_zI28AAAAzaHR0cHM6Ly9zZWN1cmU2LnN0b3JlLmFwcGxlLmNvbS9zaG9wL2FjY291bnQvaG9tZXx8AAIBQdD-cHPEdPH0mTfPcZe9y8LONBdpo7rURAnhs8MXsjw"
+              >Apple Store Account</a
+            >
+          </li>
+          <li class="footer__list--content">
+            <a class="footer-link" href="https://www.icloud.com/">iCloud.com</a>
+          </li>
+        </ul>
+      </section>
+      <div class="seperation-line"></div>
+      <section class="footer__container">
+        <p>Copyright © 2024. All rights reserved</p>
+        <p>
+          <a class="footer-link" href="#">Privacy Policy</a> |
+          <a class="footer-link" href="#">Terms of Use</a> |
+          <a class="footer-link" href="#">Sales and Refunds </a> |
+          <a class="footer-link" href="#">Legal Site</a> |
+          <a class="footer-link" href="#">Map</a>
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
