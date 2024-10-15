@@ -42,24 +42,18 @@ main {
   border-bottom: 1px solid #000;
 }
 
+.product__section--container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-x-large);
+  justify-content: space-between;
+}
+
 .product__section--ipad {
-  border: 0px;
+  border: none;
 }
 
-.product__card--heading-iphone {
-  padding-top: 0.5rem;
-  font-weight: 600;
-}
-.product__card--heading-iphone-2 {
-  padding-bottom: 1rem;
-  font-weight: 600;
-}
-
-.product__card--heading {
-  padding-bottom: 2rem;
-  font-weight: 600;
-}
-
+/* Product Card */
 .product__card {
   background-color: #fff;
   width: var(--card-width);
@@ -70,6 +64,21 @@ main {
   padding: var(--spacing-meduim);
   border-radius: var(--product-card-border-radius);
   font-size: var(--font-size-meduim);
+}
+
+.product__card--heading-iphone {
+  padding-top: 0.5rem;
+  font-weight: 600;
+}
+
+.product__card--heading-iphone-2 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.product__card--heading {
+  padding-bottom: 2rem;
+  font-weight: 600;
 }
 
 .card__paragraph {
@@ -90,6 +99,36 @@ main {
   border-radius: 1.5rem;
 }
 
+/* Product List */
+.product__list {
+  width: var(--card-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-meduim);
+  list-style: circle;
+}
+
+.product__list--heading {
+  padding-bottom: var(--spacing-small);
+}
+
+.product__list--specs {
+  padding: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
+  border-bottom: 1px solid #000;
+}
+
+.last-spec {
+  border-bottom: none;
+}
+
+.mac-list {
+  height: 660px;
+  justify-content: space-around;
+}
+
 /* Psuedo classes */
 .product__buy--link:hover {
   background-color: #2f8af1;
@@ -106,7 +145,7 @@ main {
 }
 
 /* Media queries */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   main {
     padding: var(--spacing-small);
   }
@@ -115,6 +154,12 @@ main {
     flex-wrap: wrap;
     padding: var(--spacing-meduim) 0;
     gap: var(--spacing-meduim);
+  }
+  .product__list--container {
+    gap: var(--spacing-x-large);
+  }
+  .product__list {
+    width: var(--card-width);
   }
 }
 
@@ -126,6 +171,11 @@ main {
 
 @media screen and (max-width: 768px) {
   .product__section {
+    flex-direction: column;
+    gap: var(--spacing-x-large);
+  }
+
+  .product__list {
     flex-direction: column;
   }
 }
