@@ -146,6 +146,12 @@ main {
   main {
     padding: var(--spacing-x-large) var(--spacing-small);
   }
+  .form__input {
+    width: 75%;
+  }
+  .submit__button {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {
