@@ -107,7 +107,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: var(--spacing-meduim);
-  list-style: circle;
+  list-style: none;
 }
 
 .product__list--heading {
