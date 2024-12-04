@@ -1,5 +1,4 @@
 /* Footer Containers*/
-
 .footer__list--container {
   background-color: var(--footer-background);
   color: var(--footer-foreground);
@@ -47,7 +46,7 @@
 }
 
 /* Decoration */
-.seperation-line {
+.separation-line {
   background-color: #dadada;
   height: 1px;
 }

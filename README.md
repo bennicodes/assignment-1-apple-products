@@ -1,12 +1,29 @@
-I chose to create a apple website for iphone, mac and ipad (the most popular apple products). I got some inspiration from the official apple website, and som from rebull.
+# Apple - without js
 
-I wanted to create a simpler version but maintain the modern feeling of the apple website, where it´s easy to navigate back and forth and improve the user readability and accessibility was in focus.
+A simplified Apple web application which displays some apple products
 
-The reason I targeted \_blank when you press the buy button on the product page is because me personally I don't like when the order/payment opens on the same page, because I have experienced that it can cause issues if you want to go back and change something.
+## Table of Contents
 
-Header video found on youtube, and is downloaded into /src/assets/videos folder
-https://www.youtube.com/watch?v=VDJlWuxMnjg&ab_channel=4RMD
+[Usage](#usage)
+[Features](#features)
+[Sources](#sources)
 
-Images found on https://www.google.com and https://www.apple.com
+## Usage
+
+Open the index.html file in your browser.
+Use the navbar to navigate to different pages.
+To go back to the landing page you can either press the home button in the navbar or press the apple logo.
+
+## Features
+
+Hover effects on buttons and navbar links
+Hover effects on product cards
+Order Form to gather users information
+
+## Sources
+
+Header video found on youtube: https://www.youtube.com/watch?v=VDJlWuxMnjg&ab_channel=4RMD
+
+Some of the images are taken from: https://www.apple.com
 
 Specs and information about the products are found at the official apple website https://www.apple.com
