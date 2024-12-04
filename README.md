@@ -7,6 +7,8 @@ A simplified Apple web application which displays some apple products
 [Usage](#usage)
 [Features](#features)
 [Sources](#sources)
+[License](#license)
+[Contact](#contact)
 
 ## Usage
 
@@ -27,3 +29,11 @@ Header video found on youtube: https://www.youtube.com/watch?v=VDJlWuxMnjg&ab_ch
 Some of the images are taken from: https://www.apple.com
 
 Specs and information about the products are found at the official apple website https://www.apple.com
+
+## License
+
+This project is licensed under the MIT license - see the LICENSE file for details.
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at [benedict.notoane@hotmail.com].
