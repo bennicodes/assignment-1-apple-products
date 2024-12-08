@@ -6,7 +6,7 @@ A simplified Apple web application which displays some apple products
 
 [Usage](#usage)
 [Features](#features)
-[Sources](#sources)
+[Resources](#resources)
 [License](#license)
 [Contact](#contact)
 
@@ -22,7 +22,10 @@ Hover effects on buttons and navbar links
 Hover effects on product cards
 Order Form to gather users information
 
-## Sources
+## Resources
+
+Netlify link:
+https://assignment-1-webapp.netlify.app
 
 Header video found on youtube: https://www.youtube.com/watch?v=VDJlWuxMnjg&ab_channel=4RMD
 
